@@ -10,7 +10,7 @@ import javax.imageio.ImageIO;
 
 import org.junit.jupiter.api.Test;
 /* UNCOMMENT THIS CLASS WHEN WORKING ON THE CORRESPONDING EXERCISE */
-/*
+
 class TestDigitalCamera {
 
 	@Test
@@ -36,4 +36,3 @@ class TestDigitalCamera {
 	}
 
 }
-*/
