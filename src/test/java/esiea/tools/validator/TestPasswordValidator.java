@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 /* UNCOMMENT THIS CLASS WHEN WORKING ON THE CORRESPONDING EXERCISE */
-/*
+
 class TestPasswordValidator {
 
 	@Test
@@ -16,4 +16,4 @@ class TestPasswordValidator {
 	}
 
 }
-*/
+
