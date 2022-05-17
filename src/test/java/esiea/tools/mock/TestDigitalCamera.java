@@ -17,6 +17,8 @@ class TestDigitalCamera {
 	public void testTakeSnapshot() {
 		IDigitalCamera dc = new DigitalCameraMock();
 		BufferedImage img = (BufferedImage) dc.takeSnapshot();
+		//Vérifier que ça a bien marcher
+		assertNotNull(img);
 		try {
 			ImageIO.write(img, "jpg", new File("resources\\output.jpg"));
 		} catch (IOException e) {
@@ -27,12 +29,18 @@ class TestDigitalCamera {
 
 	@Test
 	public void testFlashLightOn() {
-		fail("Not yet implemented");
+		IDigitalCamera dc = new DigitalCameraMock();
+		dc.flashLightOn();
+
+		//assertTrue();
 	}
 
 	@Test
 	public void testFlashLightOff() {
-		fail("Not yet implemented");
+		IDigitalCamera dc = new DigitalCameraMock();
+		dc.flashLightOff();
+
+		//assertTrue();
 	}
 
 }

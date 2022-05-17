@@ -10,7 +10,7 @@ import javax.imageio.ImageIO;
 
 import org.junit.jupiter.api.Test;
 /* UNCOMMENT THIS CLASS WHEN WORKING ON THE CORRESPONDING EXERCISE */
-/*
+
 class TestPhotographer {
 
 	@Test
@@ -21,6 +21,7 @@ class TestPhotographer {
 		dp.setDigitalCamera(dc);
 		BufferedImage img = (BufferedImage) dp.takePictureWithoutFlash();
 		assertNotNull(img);  //other tests may be made here on the image...
+		assertEquals(200, img.getWidth());
 		try {
 			ImageIO.write(img, "jpg", new File("resources\\outputWithoutFlash.jpg"));
 		} catch (IOException e) {
@@ -30,8 +31,20 @@ class TestPhotographer {
 
 	@Test
 	void testTakePictureWithFlash() {
-		fail("Not yet implemented");
+		System.out.println("testing the camera with flash");
+		DigitalPhotographer dp = new DigitalPhotographer();
+		IDigitalCamera dc = new DigitalCameraMock();
+		dp.setDigitalCamera(dc);
+		BufferedImage img = (BufferedImage) dp.takePictureWithFlash();
+
+		assertNotNull(img);
+		assertEquals(200, img.getHeight());
+
+		try {
+			ImageIO.write(img, "jpg", new File("resources\\outputWithoutFlash.jpg"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 }
-*/

@@ -9,7 +9,7 @@ public class DigitalCameraReal implements IDigitalCamera {
 	private  boolean flashOn = false;
 	@Override
 	public Image takeSnapshot() {
-        Image image = new BufferedImage(5, 10, 2);
+		Image image = new BufferedImage(200, 200, BufferedImage.TYPE_INT_RGB);
 		return image;
 	}
 

@@ -6,7 +6,7 @@ import java.io.*;
 import javax.imageio.ImageIO;
 
 /* UNCOMMENT THIS CLASS WHEN WORKING ON THE CORRESPONDING EXERCISE */
-/*
+
 public class DigitalPhotography {
 
 	public static void main(String[] args) {
@@ -24,4 +24,4 @@ public class DigitalPhotography {
 	}
 
 }
-*/
+
